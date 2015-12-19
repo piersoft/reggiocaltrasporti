@@ -170,7 +170,7 @@ function create_keyboard_temp($telegram, $chat_id)
  {
 		 $option = array(["Linee","Fermate"],["Informazioni"]);
 		 $keyb = $telegram->buildKeyBoard($option, $onetime=false);
-		 $content = array('chat_id' => $chat_id, 'reply_markup' => $keyb, 'text' => "[Digita un Comune, una Ricerca oppure invia la tua posizione tramite la graffetta (📎)]");
+		 $content = array('chat_id' => $chat_id, 'reply_markup' => $keyb, 'text' => "[Clicca su Linea oppure invia la tua posizione tramite la graffetta (📎)]");
 		 $telegram->sendMessage($content);
  }
 
@@ -322,8 +322,9 @@ function location_manager($db,$telegram,$user_id,$chat_id,$location)
 
 
 			//	for ($f=0;$f<$countf;$f++){
-
-			    $temp_c1 .="\nFermata: ".$distanza[$f]['nome']."\nDistanza: ".$distanza[$f]['distanza']."\nProssimoarrivo: linea ".$parsed_jsonf[0]->{'CodiceLinea'}."\nCapolinea: ".$parsed_jsonf[0]->{'CapolineaBreve'}."\nArrivo: ".$parsed_jsonf[0]->{'DataOraPassaggioPalina'};
+$ritardo=$parsed_jsonf[0]->{'MinutiScostamento'};
+if ($ritardo !== NULL) $ritardo="\nRitardo: ".$parsed_jsonf[0]->{'MinutiScostamento'};
+			    $temp_c1 .="\nFermata: ".$distanza[$f]['nome']."\nDistanza: ".$distanza[$f]['distanza']."mt\nProssimo arrivo: linea ".$parsed_jsonf[0]->{'CodiceLinea'}."\nCapolinea: ".$parsed_jsonf[0]->{'CapolineaBreve'}."\nArrivo: ".substr($parsed_jsonf[0]->{'DataOraPassaggioPalina'}, -8).$ritardo;
 	$temp_c1 .="\n_____________\n";
 			//}
 

@@ -356,8 +356,10 @@ if(feat[0]['CodiceLinea'].length != "undefined")
 for (i=0;i<feat[0]['CodiceLinea'].length;i++){
     //   // when the tiles load, remove the screen
     var last=feat[i];
+    var ritardo=last['MinutiScostamento'];
+    if (ritardo != null ) ritardo="</br>Ritardo: "+last['MinutiScostamento']+"sec";
   //  var text ="Linee servite: "+last['IdLinea']+"<br>";
-    text +="<br />Linea:"+last['CodiceLinea']+"</br>Capolinea: "+last['Capolinea']+"</br>Ritardo: "+last['MinutiScostamento'];
+    text +="<br />Linea:"+last['CodiceLinea']+"</br>Capolinea: "+last['Capolinea']+ritardo;
     var orario =last['DataOraPassaggioPalina'];
   //  orario= orario.replace("/Date(","");
   //  orario=orario.replace("000+0200)/","");
