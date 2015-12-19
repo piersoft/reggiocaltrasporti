@@ -47,8 +47,10 @@ function start($telegram,$update)
 
 		$content = array('chat_id' => $chat_id, 'text' => $reply);
 		$telegram->sendMessage($content);
-	$log=$today. ";new chat started;" .$chat_id. "\n";
-	exit;
+		$log=$today. ";new chat started;" .$chat_id. "\n";
+		$this->create_keyboard_temp($telegram,$chat_id);
+
+		exit;
 	}elseif ($text == "/linee" || $text =="Linee") {
 		$img = curl_file_create('odreggio.png','image/png');
 		$contentp = array('chat_id' => $chat_id, 'photo' => $img);
@@ -162,7 +164,8 @@ $telegram->sendMessage($content);
 			exit;
 
 		}
-	$this->create_keyboard_temp($telegram,$chat_id);
+  	$this->create_keyboard_temp($telegram,$chat_id);
+
 		file_put_contents(LOG_FILE, $log, FILE_APPEND | LOCK_EX);
 
 }
@@ -322,9 +325,9 @@ function location_manager($db,$telegram,$user_id,$chat_id,$location)
 
 
 			//	for ($f=0;$f<$countf;$f++){
-$ritardo=$parsed_jsonf[0]->{'MinutiScostamento'};
-if ($ritardo !== NULL) $ritardo="\nRitardo: ".$parsed_jsonf[0]->{'MinutiScostamento'};
-			    $temp_c1 .="\nFermata: ".$distanza[$f]['nome']."\nDistanza: ".$distanza[$f]['distanza']."mt\nProssimo arrivo: linea ".$parsed_jsonf[0]->{'CodiceLinea'}."\nCapolinea: ".$parsed_jsonf[0]->{'CapolineaBreve'}."\nArrivo: ".substr($parsed_jsonf[0]->{'DataOraPassaggioPalina'}, -8).$ritardo;
+//$ritardo=$parsed_jsonf[0]->{'MinutiScostamento'};
+//if ($ritardo !== NULL) $ritardo="\nRitardo: ".$parsed_jsonf[0]->{'MinutiScostamento'};
+			    $temp_c1 .="\nFermata: ".$distanza[$f]['nome']."\nDistanza: ".$distanza[$f]['distanza']."mt\nProssimo arrivo: linea ".$parsed_jsonf[0]->{'CodiceLinea'}."\nCapolinea: ".$parsed_jsonf[0]->{'CapolineaBreve'}."\nArrivo: ".substr($parsed_jsonf[0]->{'DataOraPassaggioPalina'}, -8);
 	$temp_c1 .="\n_____________\n";
 			//}
 

@@ -6,28 +6,13 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    15.652042,
-                    38.114299
+                    15.646412,
+                    38.086049
                 ]
             },
             "properties": {
-                "nomePalina": "Via D. Romeo, 13  Palazzo INPS",
-                "codicePalina": "4000544",
-                "distanza": "74"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    15.650852,
-                    38.114059
-                ]
-            },
-            "properties": {
-                "nomePalina": "Corso Garibaldi, 38  Negozio Talmone n\/s",
-                "codicePalina": "4001100",
+                "nomePalina": "V Sbarre Centrali, 587 Inc. V Sbarre Sup",
+                "codicePalina": "4000691",
                 "distanza": "88"
             }
         },
@@ -36,14 +21,14 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    15.652742,
-                    38.113779
+                    15.646142,
+                    38.083479
                 ]
             },
             "properties": {
-                "nomePalina": "Chiesa Candelora",
-                "codicePalina": "4000286",
-                "distanza": "158"
+                "nomePalina": "Via Gebbione  Posta (s\/n)",
+                "codicePalina": "4000767",
+                "distanza": "225"
             }
         },
         {
@@ -51,14 +36,14 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    15.651932,
-                    38.116159
+                    15.646012,
+                    38.083399
                 ]
             },
             "properties": {
-                "nomePalina": "Via De Nava, 96  incr. Via Roma",
-                "codicePalina": "4001154",
-                "distanza": "166"
+                "nomePalina": "Via Gebbione, 136  Posta",
+                "codicePalina": "4001514",
+                "distanza": "238"
             }
         },
         {
@@ -66,14 +51,14 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    15.652142,
-                    38.113049
+                    15.648532,
+                    38.083469
                 ]
             },
             "properties": {
-                "nomePalina": "Via Aschenez  (s\/n)",
-                "codicePalina": "4000287",
-                "distanza": "198"
+                "nomePalina": "Via Sbarre Centrali, 580 inc V. Gebbione",
+                "codicePalina": "4001391",
+                "distanza": "253"
             }
         },
         {
@@ -81,14 +66,14 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    15.653112,
-                    38.115949
+                    15.648582,
+                    38.083479
                 ]
             },
             "properties": {
-                "nomePalina": "Viale Amendola  Bar Arcobaleno",
-                "codicePalina": "4000553",
-                "distanza": "203"
+                "nomePalina": "Via Sbarre Centrali, 580  Incr. Via Gebb",
+                "codicePalina": "4000648",
+                "distanza": "255"
             }
         },
         {
@@ -96,14 +81,14 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    15.651872,
-                    38.112819
+                    15.649512,
+                    38.087729
                 ]
             },
             "properties": {
-                "nomePalina": "Via Aschenez",
-                "codicePalina": "4001009",
-                "distanza": "216"
+                "nomePalina": "Istituto Fermi",
+                "codicePalina": "4000280",
+                "distanza": "341"
             }
         },
         {
@@ -111,14 +96,14 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    15.649212,
-                    38.113389
+                    15.643582,
+                    38.083579
                 ]
             },
             "properties": {
-                "nomePalina": "Corso G. Matteotti, 37  (n\/s)",
-                "codicePalina": "4001101",
-                "distanza": "242"
+                "nomePalina": "Via Gebbione, 116  Dopo incr. Viale Cal.",
+                "codicePalina": "4001513",
+                "distanza": "360"
             }
         },
         {
@@ -126,14 +111,14 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    15.653072,
-                    38.116589
+                    15.644972,
+                    38.088239
                 ]
             },
             "properties": {
-                "nomePalina": "Via Mons.De Lorenzo, 60  Incr. Via Roma",
-                "codicePalina": "4000550",
-                "distanza": "254"
+                "nomePalina": "Via Sbarre Centrali, 475",
+                "codicePalina": "4000692",
+                "distanza": "362"
             }
         },
         {
@@ -141,148 +126,13 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    15.653452,
-                    38.116379
+                    15.643192,
+                    38.083749
                 ]
             },
             "properties": {
-                "nomePalina": "Viale Amendola  TAR",
-                "codicePalina": "4001629",
-                "distanza": "257"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    15.650662,
-                    38.112469
-                ]
-            },
-            "properties": {
-                "nomePalina": "Via Torrione, 13  Incr Via Ten. Panella",
-                "codicePalina": "4000543",
-                "distanza": "259"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    15.654472,
-                    38.115579
-                ]
-            },
-            "properties": {
-                "nomePalina": "Via Willermin  ASL - Struttura n. 1",
-                "codicePalina": "4001608",
-                "distanza": "286"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    15.650032,
-                    38.117079
-                ]
-            },
-            "properties": {
-                "nomePalina": "Viale Zerbi  Incr. Via Roma (n\/s)",
-                "codicePalina": "4000013",
-                "distanza": "287"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    15.652632,
-                    38.117559
-                ]
-            },
-            "properties": {
-                "nomePalina": "Via De Nava, 74  Chiesa S. Lucia (n\/s)",
-                "codicePalina": "4001149",
-                "distanza": "333"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    15.651992,
-                    38.111649
-                ]
-            },
-            "properties": {
-                "nomePalina": "Via Reggio Campi  Istituto Vitrioli n\/s",
-                "codicePalina": "4001010",
-                "distanza": "346"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    15.651902,
-                    38.111569
-                ]
-            },
-            "properties": {
-                "nomePalina": "Via Reggio Campi, 11e  Ist. Vitrioli s\/n",
-                "codicePalina": "4000288",
-                "distanza": "354"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    15.652372,
-                    38.117979
-                ]
-            },
-            "properties": {
-                "nomePalina": "Via XXV LUGLIO",
-                "codicePalina": "4000701",
-                "distanza": "372"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    15.648012,
-                    38.112629
-                ]
-            },
-            "properties": {
-                "nomePalina": "Corso G. Matteotti, 61 Magistrale (n\/s)",
-                "codicePalina": "4001102",
-                "distanza": "376"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    15.652592,
-                    38.117999
-                ]
-            },
-            "properties": {
-                "nomePalina": "Via XXV LUGLIO  Prima Incr. Via De Nava",
-                "codicePalina": "4001507",
+                "nomePalina": "Via Gebbione,19  (s\/n)",
+                "codicePalina": "4000768",
                 "distanza": "379"
             }
         },
@@ -291,43 +141,13 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    15.653592,
-                    38.117759
+                    15.650522,
+                    38.087649
                 ]
             },
             "properties": {
-                "nomePalina": "Via XXV LUGLIO Mercato Piazza del Popolo",
-                "codicePalina": "4002067",
-                "distanza": "388"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    15.651092,
-                    38.118279
-                ]
-            },
-            "properties": {
-                "nomePalina": "Via XXV LUGLIO  Dopo Incr. Viale Zerbi",
-                "codicePalina": "4001506",
-                "distanza": "396"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    15.649922,
-                    38.118119
-                ]
-            },
-            "properties": {
-                "nomePalina": "Viale Zerbi  Pineta",
-                "codicePalina": "4001505",
+                "nomePalina": "Via Laboccetta, 94  (s\/n)",
+                "codicePalina": "4000281",
                 "distanza": "398"
             }
         },
@@ -336,14 +156,14 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    15.655152,
-                    38.112539
+                    15.641892,
+                    38.084449
                 ]
             },
             "properties": {
-                "nomePalina": "V Melacrino  Inc. V Collina degli Angeli",
-                "codicePalina": "4000546",
-                "distanza": "409"
+                "nomePalina": "Viale Calabria  BRICO CENTER (n\/s)",
+                "codicePalina": "4001512",
+                "distanza": "458"
             }
         },
         {
@@ -351,14 +171,14 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    15.650482,
-                    38.118469
+                    15.641922,
+                    38.084319
                 ]
             },
             "properties": {
-                "nomePalina": "Via XXV LUGLIO  Prima Inrc V.le Zerbi",
-                "codicePalina": "4000702",
-                "distanza": "424"
+                "nomePalina": "Viale Calabria  Brico Center (s\/n)",
+                "codicePalina": "4000791",
+                "distanza": "459"
             }
         },
         {
@@ -366,14 +186,14 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    15.653582,
-                    38.118139
+                    15.641702,
+                    38.086249
                 ]
             },
             "properties": {
-                "nomePalina": "V. Mons.De Lorenzo, 44  Incr. V Brancati",
-                "codicePalina": "4000551",
-                "distanza": "425"
+                "nomePalina": "Viale Calabria  Incr. Via S.Giuseppe s\/n",
+                "codicePalina": "4000792",
+                "distanza": "472"
             }
         },
         {
@@ -381,14 +201,14 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    15.654902,
-                    38.117389
+                    15.641582,
+                    38.086469
                 ]
             },
             "properties": {
-                "nomePalina": "Viale Amendola  Mercatino (s\/n)",
-                "codicePalina": "4000554",
-                "distanza": "427"
+                "nomePalina": "Viale Calabria  Incr. Via S. Giuseppe",
+                "codicePalina": "4001511",
+                "distanza": "487"
             }
         },
         {
@@ -396,28 +216,13 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    15.655082,
-                    38.117579
+                    15.649802,
+                    38.089189
                 ]
             },
             "properties": {
-                "nomePalina": "Viale Amendola  MERCATINO (n\/s)",
-                "codicePalina": "4001337",
-                "distanza": "453"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    15.648722,
-                    38.110859
-                ]
-            },
-            "properties": {
-                "nomePalina": "Via Torrione, 31  Incr Via 2 Settembre",
-                "codicePalina": "4000542",
+                "nomePalina": "Via Calveri  Dietro Hotel Apan (n\/s)",
+                "codicePalina": "4000991",
                 "distanza": "489"
             }
         },
@@ -426,14 +231,29 @@
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    15.650222,
-                    38.119079
+                    15.641972,
+                    38.083349
                 ]
             },
             "properties": {
-                "nomePalina": "Viale Boccioni  incr. Viale Zerbi",
-                "codicePalina": "4002089",
-                "distanza": "495"
+                "nomePalina": "Viale Calabria (nuovo tratto)",
+                "codicePalina": "4002081",
+                "distanza": "494"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    15.650332,
+                    38.081769
+                ]
+            },
+            "properties": {
+                "nomePalina": "Via Ravagnese Sup., 6  Gommista (s\/n)",
+                "codicePalina": "4000647",
+                "distanza": "499"
             }
         }
     ]
