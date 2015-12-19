@@ -43,7 +43,7 @@ function start($telegram,$update)
 		$telegram->sendPhoto($contentp);
 		$reply = "Benvenuto. Invia la tua posizione cliccando sulla graffetta (📎) e ti indicherò le fermate più vicine nel raggio di 500 metri e relative linee ed orari";
 		$reply .= "\nI dati, in licenza opendata IoDL2.0, sono prelevabili realtime su http://dati.reggiocal.it/";
-		$reply .= "\nProgetto sviluppato da @Piersoft. Si declina ogni responsabilità sulla veridicità dei dati.";
+		$reply .= "\nProgetto sviluppato da @Piersoft. Sorgente lic. MIT su https://github.com/piersoft/reggiocaltrasporti";
 
 		$content = array('chat_id' => $chat_id, 'text' => $reply);
 		$telegram->sendMessage($content);

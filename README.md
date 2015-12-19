@@ -18,5 +18,5 @@ To use the system of Reggio Calabria Trasporti Bot
 To use the application use "start.php getupdates" for manual execution. "start.php sethook" for Telegram webhook execution.
 
 There is also web version. 
-http://www.piersoft.it/reggiocaltrasporti/ even if your GPS is active or for demo http://www.piersoft.it/reggiocaltrasporti/locator.php?lat=41.118648&lon=16.870353&r=1
+http://www.piersoft.it/reggiocaltrasporti/ even if your GPS is active or for demo http://www.piersoft.it/reggiocaltrasporti/locator.php?lat=38.085395&lon=15.646982&r=1
 

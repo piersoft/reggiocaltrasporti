@@ -1,4 +1,4 @@
-<?php
+  <?php
 
 
 //file di test
@@ -357,7 +357,9 @@ for (i=0;i<feat[0]['CodiceLinea'].length;i++){
     //   // when the tiles load, remove the screen
     var last=feat[i];
     var ritardo=last['MinutiScostamento'];
-    if (ritardo != null ) ritardo="</br>Ritardo: "+last['MinutiScostamento']+"sec";
+    if (ritardo != null ) {
+      ritardo="</br>Ritardo: "+last['MinutiScostamento']+"sec";
+    }else ritardo="";
   //  var text ="Linee servite: "+last['IdLinea']+"<br>";
     text +="<br />Linea:"+last['CodiceLinea']+"</br>Capolinea: "+last['Capolinea']+ritardo;
     var orario =last['DataOraPassaggioPalina'];
