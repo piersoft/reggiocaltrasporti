@@ -254,7 +254,8 @@ overflow-x: hidden;
             zoom: zoom,
             layers: [osm]
         });
-
+        var markeryou = L.marker([parseFloat('<?php printf($_GET['lat']); ?>'), parseFloat('<?php printf($_GET['lon']); ?>')]).addTo(map);
+        markeryou.bindPopup("<b>Sei qui</b>");
         var baseMaps = {
     "Satellite": realvista,
     "Trasporti": osm,
