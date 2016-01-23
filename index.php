@@ -12,7 +12,7 @@ $r=$_GET['r'];
 <script src='https://api.mapbox.com/mapbox.js/v2.2.2/mapbox.js'></script>
 <link href='https://api.mapbox.com/mapbox.js/v2.2.2/mapbox.css' rel='stylesheet' />
 <meta name="viewport" content="width=device-width, initial-scale=0.8, maximum-scale=1.0, user-scalable=no">
-<meta property="og:image" content="http://www.piersoft.it/provemibact/bus_.png"/>
+<meta property="og:image" content="http://www.piersoft.it/baritrasportibot/bus_.png"/>
 
 </head>
 <body onload="getLocation()">
