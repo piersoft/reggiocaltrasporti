@@ -51,6 +51,15 @@ function start($telegram,$update)
 		$this->create_keyboard_temp($telegram,$chat_id);
 
 		exit;
+	}elseif ($text == "/location" || $text == "Posizione") {
+
+		$option = array(array($telegram->buildKeyboardButton("Invia la tua posizione / send your location", false, true)) //this work
+											);
+	// Create a permanent custom keyboard
+	$keyb = $telegram->buildKeyBoard($option, $onetime=false);
+	$content = array('chat_id' => $chat_id, 'reply_markup' => $keyb, 'text' => "Attiva la localizzazione sul tuo smartphone / Turn on your GPS");
+	$telegram->sendMessage($content);
+	exit;
 	}elseif ($text == "/linee" || $text =="Linee") {
 		$img = curl_file_create('odreggio.png','image/png');
 		$contentp = array('chat_id' => $chat_id, 'photo' => $img);
@@ -171,7 +180,7 @@ $telegram->sendMessage($content);
 }
 function create_keyboard_temp($telegram, $chat_id)
  {
-		 $option = array(["Linee","Fermate"],["Informazioni"]);
+		 $option = array(["Linee","Fermate"],["Posizione","Informazioni"]);
 		 $keyb = $telegram->buildKeyBoard($option, $onetime=false);
 		 $content = array('chat_id' => $chat_id, 'reply_markup' => $keyb, 'text' => "[Clicca su Linea oppure invia la tua posizione tramite la graffetta (📎)]");
 		 $telegram->sendMessage($content);
@@ -201,9 +210,9 @@ function location_manager($db,$telegram,$user_id,$chat_id,$location)
 
 			$bot_request_message_id=$response["message"]["message_id"];
 			$time=$response["message"]["date"]; //registro nel DB anche il tempo unix
-			$img = curl_file_create('odreggio.png','image/png');
-			$contentp = array('chat_id' => $chat_id, 'photo' => $img);
-			$telegram->sendPhoto($contentp);
+	//		$img = curl_file_create('odreggio.png','image/png');
+	//		$contentp = array('chat_id' => $chat_id, 'photo' => $img);
+	//		$telegram->sendPhoto($contentp);
 			$content = array('chat_id' => $chat_id, 'text' => "Sto cercando le fermate attorno alla tua posizione nel raggio di 500mt..", 'reply_to_message_id' =>$bot_request_message_id,'disable_web_page_preview'=>true);
 	 	 $telegram->sendMessage($content);
 
@@ -228,7 +237,6 @@ function location_manager($db,$telegram,$user_id,$chat_id,$location)
 
 			//  $time =$csv[0]->{'codicePalina'}; //registro nel DB anche il tempo unix
 			//  $fermataid =$csv[0]->{'nomePaline'};
-
 
 
 
@@ -323,11 +331,19 @@ function location_manager($db,$telegram,$user_id,$chat_id,$location)
 
 			//for ($tt=0;$tt<5;$tt++){
 
+										if (strpos($distanza[$f]['nome'],' ') == false){
+
+												$content = array('chat_id' => $chat_id, 'text' => "Non ci sono fermate nelle vicinanze", 'reply_to_message_id' =>$bot_request_message_id,'disable_web_page_preview'=>true);
+											 $telegram->sendMessage($content);
+											 $this->create_keyboard_temp($telegram,$chat_id);
+											exit;
+
+										}
 
 			//	for ($f=0;$f<$countf;$f++){
 //$ritardo=$parsed_jsonf[0]->{'MinutiScostamento'};
 //if ($ritardo !== NULL) $ritardo="\nRitardo: ".$parsed_jsonf[0]->{'MinutiScostamento'};
-			    $temp_c1 .="\nFermata: ".$distanza[$f]['nome']."\nDistanza: ".$distanza[$f]['distanza']."mt\nProssimo arrivo: linea ".$parsed_jsonf[0]->{'CodiceLinea'}."\nCapolinea: ".$parsed_jsonf[0]->{'CapolineaBreve'}."\nArrivo: ".substr($parsed_jsonf[0]->{'DataOraPassaggioPalina'}, -8);
+	$temp_c1 .="\nFermata: ".$distanza[$f]['nome']."\nDistanza: ".$distanza[$f]['distanza']."mt\nProssimo arrivo: linea ".$parsed_jsonf[0]->{'CodiceLinea'}."\nCapolinea: ".$parsed_jsonf[0]->{'CapolineaBreve'}."\nArrivo: ".substr($parsed_jsonf[0]->{'DataOraPassaggioPalina'}, -8);
 	$temp_c1 .="\n_____________\n";
 			//}
 
@@ -336,6 +352,7 @@ function location_manager($db,$telegram,$user_id,$chat_id,$location)
 		//	echo $temp_c1;
 
 $longUrl="http://www.piersoft.it/reggiocaltrasporti/locator.php?lat=".$lat."&lon=".$lon."&r=1";
+/*
 $apiKey = API;
 
 $postData = array('longUrl' => $longUrl, 'key' => $apiKey);
@@ -362,7 +379,7 @@ $shortLink = get_object_vars($json);
 //return $json->id;
 
 $temp_c1 .="\nVisualizza tutte le fermate su mappa :\n".$shortLink['id'];
-
+*/
 
 
  $chunks = str_split($temp_c1, self::MAX_LENGTH);
@@ -373,6 +390,10 @@ $temp_c1 .="\nVisualizza tutte le fermate su mappa :\n".$shortLink['id'];
 		 $telegram->sendMessage($content);
 
  }
+ $option = array( array( $telegram->buildInlineKeyboardButton("MAPPA", $url=$longUrl)));
+ $keyb = $telegram->buildInlineKeyBoard($option);
+ $content = array('chat_id' => $chat_id, 'reply_markup' => $keyb, 'text' => "<b>Visualizzate tutte sulla</b>",'parse_mode'=>"HTML");
+ $telegram->sendMessage($content);
  //$telegram->sendMessage($content);
 	echo $temp_l1;
 
